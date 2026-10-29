@@ -1,0 +1,96 @@
+:root{--ink:#000;--text:#404040;--blue:#1d5b80;--gold:#7b6028;--line:#c9c9c9;--foot:#2f2e2e}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif;font-weight:300;font-size:18px;line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header{background:#fff}
+header .wrap{display:flex;justify-content:space-between;align-items:flex-start;padding-top:40px;padding-bottom:16px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:62px}
+.brand b{font-family:"Jost",sans-serif;font-weight:300;font-size:40px;letter-spacing:.01em}
+.tagline{font-size:18px;margin:8px 0 0 70px}
+nav{display:flex;gap:22px;padding-top:12px}
+nav a{font-size:15px;color:var(--text)}
+nav a:hover,nav a.on{color:var(--gold)}
+.menu-btn{display:none;background:none;border:0;font-size:28px;cursor:pointer;padding:6px}
+
+/* Banner (strip under the header on inner pages) */
+.banner{height:360px;background:center/cover;box-shadow:0 10px 12px -8px rgba(0,0,0,.45)}
+.hero{position:relative;height:600px;background:#333 url(img/hero.jpg) center/cover;display:flex;align-items:center}
+.hero blockquote{margin:0 auto;width:100%;max-width:980px;padding:0 20px 0 270px;color:#fff;font-family:"Jost",sans-serif;font-weight:300}
+.hero p{font-size:34px;line-height:1.45;margin:0;max-width:560px}
+.hero cite{display:block;font-style:normal;font-size:18px;margin-top:28px;text-align:right;max-width:560px}
+
+/* Content */
+main{padding:60px 0 80px}
+.intro{font-size:24px;text-align:justify;line-height:1.2}
+.intro p{margin:0 0 29px}
+h2{font-family:"Jost",sans-serif;font-weight:300;color:var(--blue);font-size:34px;text-transform:uppercase;margin:0 0 30px;padding:0 0 8px 20px;border-bottom:1px solid var(--line);display:inline-block;min-width:440px}
+.block{margin-bottom:70px;padding-bottom:60px;box-shadow:0 12px 10px -12px rgba(0,0,0,.35)}
+.block:last-child{box-shadow:none;margin-bottom:0}
+.cols{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
+.cols img{border:1px solid #2b5874}
+.just{text-align:justify}
+p{margin:0 0 18px}
+ul{padding-left:22px;margin:0 0 18px}li{margin-bottom:18px;text-align:justify}
+
+/* Person */
+.p-top{display:grid;grid-template-columns:1fr 1.4fr;align-items:center;gap:40px;margin-bottom:60px}
+.p-top img{width:160px;border:2px solid var(--blue);justify-self:center}
+.p-name{border-top:1px solid #888;border-bottom:1px solid #888;text-align:center;padding:18px 0;font-family:"Jost",sans-serif;font-size:20px;color:var(--blue)}
+.p-sec{margin-bottom:40px}
+.p-sec h2{min-width:0}
+
+/* Kontakt */
+.k-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:60px}
+.k-photo{width:110px;height:130px;object-fit:cover;border-radius:50%;margin:0 auto 18px}
+.k-dash{width:26px;border-top:2px solid var(--blue);margin:0 auto 26px}
+.k-row{display:flex;align-items:center;gap:18px;margin:0 0 22px;font-size:16px}
+.k-row svg{width:22px;height:22px;flex:none;stroke:#555;fill:none;stroke-width:1.5}
+.k-intro{text-align:center;border-top:2px solid #7a9bb0;border-bottom:2px solid #7a9bb0;padding:22px 10px;margin-bottom:26px;font-size:18px}
+form{display:grid;gap:10px}
+input,textarea{font:inherit;font-size:15px;padding:9px 10px;border:1px solid #bbb;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.2);width:100%}
+textarea{min-height:130px;resize:vertical}
+form button{justify-self:end;font:inherit;font-size:15px;background:var(--blue);color:#fff;border:0;padding:9px 34px;cursor:pointer}
+form button:hover{background:#163f59}
+.hp{position:absolute;left:-9999px}
+
+.legal{font-size:15px;text-align:justify}
+.legal h3{font-weight:600;font-size:16px;margin:22px 0 6px}
+
+/* Footer */
+footer{background:var(--foot);color:#fff;font-size:14px;padding:30px 0 34px}
+footer .wrap{display:grid;grid-template-columns:200px 1fr 260px;gap:20px;align-items:start}
+footer .logo{width:80px;margin:16px 0 0 26px;filter:invert(1)}
+.fnav{text-align:center}
+.fnav div{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px;margin-top:12px}
+.fcontact{text-align:right;line-height:1.9;padding-top:24px}
+footer a:hover{text-decoration:underline}
+
+/* Mobile */
+@media(max-width:760px){
+ body{font-size:17px}
+ header .wrap{padding-top:16px;padding-bottom:10px;align-items:center;position:relative}
+ .brand img{width:40px}.brand b{font-size:28px}
+ .tagline{font-size:14px;margin:2px 0 0 54px}
+ .menu-btn{display:block}
+ nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:20;background:#fff;flex-direction:column;gap:0;padding:6px 20px 14px;box-shadow:0 8px 12px rgba(0,0,0,.12)}
+ nav.open{display:flex}nav a{font-size:18px;padding:10px 0;border-bottom:1px solid #eee}
+ .banner{height:180px}
+ .hero{height:70vh;min-height:420px}
+ .hero blockquote{padding:0 20px}
+ .hero p{font-size:26px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+ main{padding:40px 0 50px}
+ .intro{font-size:19px;text-align:left;line-height:1.45}
+ h2{font-size:25px;min-width:0;display:block;padding-left:0}
+ .cols,.p-top,.k-grid{grid-template-columns:1fr;gap:28px}
+ .cols img{max-height:420px;width:100%;object-fit:cover}
+ .just,li{text-align:left}
+ .block{margin-bottom:40px;padding-bottom:36px}
+ footer .wrap{grid-template-columns:1fr;text-align:center}
+ footer .logo{margin:10px auto 0}
+ .fcontact{text-align:center;padding-top:0}
+}
