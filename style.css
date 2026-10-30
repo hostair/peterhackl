@@ -49,6 +49,8 @@ ul{padding-left:22px;margin:0 0 18px}li{margin-bottom:18px;text-align:justify}
 .p-name{border-top:1px solid #888;border-bottom:1px solid #888;text-align:center;padding:18px 0;font-family:"Jost",sans-serif;font-size:20px;color:var(--blue)}
 .p-sec{margin-bottom:40px}
 .p-sec h2{min-width:0}
+.p-sec li{font-size:24px;line-height:1.3;margin:0;text-align:left}
+.map{display:block;width:100%;height:420px;border:0}
 
 /* Kontakt */
 .k-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:60px}
@@ -70,7 +72,7 @@ form button:hover{background:#163f59}
 /* Footer */
 footer{background:var(--foot);color:#fff;font-size:14px;padding:30px 0 34px}
 footer .wrap{display:grid;grid-template-columns:200px 1fr 260px;gap:20px;align-items:start}
-footer .logo{width:80px;margin:16px 0 0 26px;filter:invert(1)}
+footer .logo{width:80px;margin:16px 0 0 26px}
 .fnav{text-align:center}
 .fnav div{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px;margin-top:12px}
 .fcontact{text-align:right;line-height:1.9;padding-top:24px}
@@ -86,6 +88,7 @@ footer a:hover{text-decoration:underline}
  nav{display:none;position:absolute;top:100%;left:0;right:0;z-index:20;background:#fff;flex-direction:column;gap:0;padding:6px 20px 14px;box-shadow:0 8px 12px rgba(0,0,0,.12)}
  nav.open{display:flex}nav a{font-size:18px;padding:10px 0;border-bottom:1px solid #eee}
  .dd{display:contents}.sub{display:block;position:static;transform:none;padding:0;text-align:left;white-space:normal}.sub a{font-size:16px;padding:9px 0 9px 18px}
+ .p-sec li{font-size:18px;margin-bottom:8px}.map{height:280px}
  .banner{height:180px}
  .hero{height:70vh;min-height:420px}
  .hero blockquote{padding:0 20px}
