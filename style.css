@@ -108,7 +108,7 @@ footer a:hover{text-decoration:underline}
 /* Medidas tomadas de Wix a 1300px */
 @media(min-width:761px){
  header .wrap{max-width:913px;padding:43px 0 0;height:180px;position:relative;left:-50px}
- .brand{gap:25px}.brand img{width:44px}
+ .brand{gap:4px}.brand img{width:65px}
  .tagline{margin:10px 0 0 74px}
  nav{gap:20px;padding-top:4px}
  main .wrap{max-width:953px;padding:0;position:relative;left:12px}
