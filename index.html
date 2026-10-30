@@ -38,5 +38,7 @@
  </div>
 </footer>
 <script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear())</script>
+<div class="cookie" id="cookie" hidden><p>Um Ihnen den bestmöglichen Service zu bieten, speichert diese Website Informationen über Ihren Besuch in sogenannten Cookies. Durch die Nutzung dieser Webseite erklären Sie sich mit der Verwendung von Cookies einverstanden. Weitere Informationen über Cookies, sowie welche Cookies wir wie lange speichern, finden Sie in unserer <a href="datenschutzerklaerung">Datenschutzerklärung</a>. Dort können Sie auch der Verwendung von Cookies widersprechen und Ihre Browsereinstellungen entsprechend anpassen.</p><button type="button" id="cookie-ok">OK</button></div>
+<script>(function(){var c=document.getElementById('cookie'),s=null;try{s=localStorage.getItem('cookie-ok')}catch(e){}if(!s)c.hidden=false;document.getElementById('cookie-ok').onclick=function(){c.hidden=true;try{localStorage.setItem('cookie-ok','1')}catch(e){}}})()</script>
 </body>
 </html>
