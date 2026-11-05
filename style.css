@@ -117,7 +117,8 @@ footer a:hover{text-decoration:underline}
  .p-sec h2{min-width:0}
  h2::after{content:"";position:absolute;left:31px;right:-49px;bottom:-7px;border-bottom:1px solid #ccc}
  .block{box-shadow:0 12px 10px -12px rgba(0,0,0,.7)}
- .just,li,.p-sec li{font-size:22px;line-height:1.4}
+ .just,li,.p-sec li,.block p{font-size:22px;line-height:1.4}
+ .p-name{font-size:26px}
  .cols{grid-template-columns:528px 376px;gap:49px}
  .cols img{height:290px;width:100%;object-fit:cover}
  .banner{height:445px;background-position:center bottom!important;box-shadow:none;position:relative}
