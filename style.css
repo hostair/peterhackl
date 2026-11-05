@@ -97,7 +97,7 @@ footer a:hover{text-decoration:underline}
  .intro{font-size:19px;text-align:left;line-height:1.45}
  h2{font-size:25px;min-width:0;display:block;padding-left:0}
  .cols,.p-top,.k-grid{grid-template-columns:1fr;gap:28px}
- .cols img{max-height:420px;width:100%;object-fit:cover}
+ .cols img{max-height:420px;width:100%;object-fit:cover;margin-bottom:20px;aspect-ratio:3/2}
  .just,li{text-align:left}
  .block{margin-bottom:40px;padding-bottom:36px}
  footer .wrap{grid-template-columns:1fr;text-align:center}
