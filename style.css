@@ -45,7 +45,7 @@ ul{padding-left:22px;margin:0 0 18px}li{margin-bottom:18px;text-align:left}
 
 /* Person */
 .p-top{display:grid;grid-template-columns:1fr 1.4fr;align-items:center;gap:40px;margin-bottom:60px}
-.p-top img{width:160px;border:2px solid var(--blue);justify-self:center}
+.p-top img{filter:grayscale(1);width:160px;border:2px solid var(--blue);justify-self:center}
 .p-name{border-top:1px solid #888;border-bottom:1px solid #888;text-align:center;padding:18px 0;font-family:"Jost",sans-serif;font-size:20px;color:var(--blue)}
 .p-sec{margin-bottom:40px}
 .p-sec h2{min-width:0}
